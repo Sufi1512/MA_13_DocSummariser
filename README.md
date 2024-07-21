@@ -42,13 +42,13 @@ This project is a web application that utilizes AI and machine learning to proce
    ```sh
    git clone Sufi1512/MA_13_DocSummariser    
    cd MA_13_DocSummariser   
-2.Create and activate a virtual environment:
+2. Create and activate a virtual environment:
   ```sh
   python -m venv venv
   source venv/bin/activate
 
-3.Install the required packages:
-  ```sh
-  pip install -r requirements.txt
+
+
+
 
 
