@@ -46,9 +46,3 @@ This project is a web application that utilizes AI and machine learning to proce
   ```sh
   python -m venv venv
   source venv/bin/activate
-
-
-
-
-
-
