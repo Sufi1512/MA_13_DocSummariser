@@ -43,6 +43,71 @@ This project is a web application that utilizes AI and machine learning to proce
    git clone Sufi1512/MA_13_DocSummariser    
    cd MA_13_DocSummariser   
 2. Create and activate a virtual environment:
-  ```sh
-  python -m venv venv
-  source venv/bin/activate
+   ```sh
+   python -m venv venv
+   source venv/bin/activate
+3. Install the required packages:  
+   ```shh
+   pip install -r requirements.txt
+
+
+4. Set up environment variables:
+  . Create a .env file in the root directory.
+  . Add your Google API key
+   ```shh
+   GOOGLE_API_KEY=your_google_api_key
+5. Install Tesseract OCR:
+   Windows: Download and install Tesseract OCR from https://github.com/UB-Mannheim/tesseract/wiki.
+   Linux: Install Tesseract OCR using the following command:
+      ```shh
+   sudo apt-get install tesseract-ocr
+
+
+
+### Usage
+
+1. Run the application:
+2. Open your web browser and navigate to http://127.0.0.1:5000.
+3. Use the following routes to access different functionalities:
+
+   /image: Upload images and extract text.
+   /pdf: Upload PDF documents and extract text.
+   /video: Summarize YouTube videos and local videos.
+   
+### Project Structure
+  MA_13_DocSummariser/
+├── app.py
+├── imgtotext.py
+├── pdftotext.py
+├── video.py
+├── templates/
+│   ├── index.html
+│   ├── imagetotext.html
+│   ├── pdftotext.html
+│   ├── video.html
+├── static/
+│   ├── css/
+│   ├── js/
+├── requirements.txt
+└── .env
+
+### Dependencies
+Flask
+Pillow
+pytesseract
+PyPDF2
+langchain
+langchain_google_genai
+langchain_community
+moviepy
+speechrecognition
+transformers
+youtube_transcript_api
+google-generativeai
+
+
+
+
+
+   
+   
